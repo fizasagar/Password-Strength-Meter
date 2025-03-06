@@ -30,7 +30,7 @@ st.markdown("""
     /* Modern Button */
     .stButton button {
         width: 50%;
-        background: #ba88f7;
+        background: #b563f7;
         color: white;
         font-size: 18px;
         border-radius: 8px;
