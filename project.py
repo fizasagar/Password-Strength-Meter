@@ -28,8 +28,8 @@ st.markdown("""
     }
 
     /* Modern Button */
-     .stButton > button {
-        background: linear-gradient(to right, #6a11cb, #2575fc);
+    .stButton > button {
+        background-color: #4CAF50;
         color: white;
         font-size: 18px;
         border-radius: 8px;
@@ -38,7 +38,7 @@ st.markdown("""
         border: none;
     }
     .stButton > button:hover {
-        background: linear-gradient(to right, #2575fc, #6a11cb);
+        background-color: #45a049;
         transform: scale(1.05);
     }
 
