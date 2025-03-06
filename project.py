@@ -102,11 +102,11 @@ def check_password_strength(password):
     elif score == 3 :
         st.info("⚠️ **Moderate Password** - Consider improving security by adding more features")
     else:
-        st.error("**Week Password** - Follow the suggestion below to strength it.")
+        st.error(" **Week Password** - Follow the suggestion below to strength it.")
 
     # Feedback
     if feedback:
-        with st.expander("🔎 ** Improve Your Password**"):
+        with st.expander("🔎 **Improve Your Password** "):
             for item in feedback:
                 st.write(item)
 password= st.text_input("Enter Your Password:", type="password", help="Ensure your password must be strong💪")
