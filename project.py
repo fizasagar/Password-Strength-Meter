@@ -28,17 +28,17 @@ st.markdown("""
     }
 
     /* Modern Button */
-    .stButton button {
-        width: 50%;
-        background: #b563f7;
+     .stButton > button {
+        background: linear-gradient(to right, #6a11cb, #2575fc);
         color: white;
         font-size: 18px;
         border-radius: 8px;
+        padding: 10px;
         transition: 0.3s;
+        border: none;
     }
-    .stButton button:hover {
-        background: #5cbbfa;
-        color: #fafafa;
+    .stButton > button:hover {
+        background: linear-gradient(to right, #2575fc, #6a11cb);
         transform: scale(1.05);
     }
 
