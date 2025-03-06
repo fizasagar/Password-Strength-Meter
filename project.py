@@ -10,12 +10,61 @@ st.set_page_config(page_title="Password Strength Checker By Fiza Asif", page_ico
 # Custom Css
 st.markdown("""
 <style>
-    .main {text-align: center; }
-    .stTextInput {width: 60% !important; margin: auto; }
-    .stButton button {width: 50%; background-color: #ba88f7; color: white; font-size: 18px; }
-    .stButton button:hover {background-color: #5cbbfa; color: #fafafa;}
+    /* Background Gradient */
+    .stApp {
+        background: linear-gradient(to right, #8360c3, #2ebf91);
+        color: white;
+    }
+
+    /* Centered Content */
+    .main { text-align: center; }
+
+    /* Stylish Input Box */
+    .stTextInput > div > div > input {
+        border: 2px solid #4CAF50;
+        border-radius: 8px;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    /* Modern Button */
+    .stButton button {
+        width: 50%;
+        background: #ba88f7;
+        color: white;
+        font-size: 18px;
+        border-radius: 8px;
+        transition: 0.3s;
+    }
+    .stButton button:hover {
+        background: #5cbbfa;
+        color: #fafafa;
+        transform: scale(1.05);
+    }
+
+    /* Expander Styling */
+    .st-expander {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    /* Success Message */
+    .stSuccess {
+        background-color: #4CAF50 !important;
+        color: white !important;
+        border-radius: 8px;
+    }
+
+    /* Error Message */
+    .stError {
+        background-color: #FF5733 !important;
+        color: white !important;
+        border-radius: 8px;
+    }
 </style>
 """, unsafe_allow_html=True)
+
 
 # Page Title & Description
 st.title("🔒 Password Strength Generator")
